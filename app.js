@@ -628,8 +628,7 @@
     setText('ui-ins', r.insMonths + '개월');
     setText('ui-applied', r.applied);
 
-    var tone = (r.applied === '상한액') ? 'badge-neutral' : (r.applied === '하한액' ? 'badge-ok' : 'badge-ok');
-    setBadge('ui-badge', r.applied + ' 적용', tone);
+    setBadge('ui-badge', r.applied + ' 적용', 'badge-ok');
 
     var msg;
     if (r.applied === '상한액') {

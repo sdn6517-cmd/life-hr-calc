@@ -61,6 +61,7 @@ python3 tests/dom-smoke.py  # 화면 렌더링 43항목
 2. **Taboola / MGID** — `</body>` 직전에 사업자 스크립트를 한 번 넣고, 각 지면의 `.ad-inner` 안에
    해당 위젯 컨테이너를 넣습니다.
 3. 승인 전에는 지면이 점선 자리표시자로 보이며, 빈 광고 코드는 넣지 않았습니다.
+4. 승인 후 루트에 `ads.txt` 를 만들고 `google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0` 한 줄을 넣으면 됩니다.
 
 ## 배포
 
