@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>계산 엔진 검증 · 생활 계산소</title>
+<style>
+  body { font-family: -apple-system, system-ui, "Malgun Gothic", sans-serif; margin: 0; padding: 20px; background: #f6f7f9; color: #14213a; }
+  h1 { font-size: 1.2rem; }
+  .sum { font-size: 1.05rem; font-weight: 700; margin: 10px 0 16px; }
+  .sum.ok { color: #0f766e; }
+  .sum.fail { color: #b42318; }
+  table { border-collapse: collapse; width: 100%; background: #fff; font-size: .85rem; }
+  th, td { border: 1px solid #e3e7ec; padding: 6px 8px; text-align: left; vertical-align: top; }
+  th { background: #f0f2f5; }
+  tr.pass td:first-child { color: #0f766e; font-weight: 700; }
+  tr.fail td:first-child { color: #b42318; font-weight: 700; }
+  a { color: #8f2f4d; }
+</style>
+</head>
+<body>
+<h1>계산 엔진 자동 검증</h1>
+<p><a href="../index.html">← 계산기로 돌아가기</a></p>
+<div class="sum" id="sum">실행 중…</div>
+<table>
+  <thead>
+    <tr><th>결과</th><th>항목</th><th>기대</th><th>실제</th></tr>
+  </thead>
+  <tbody id="rows"></tbody>
+</table>
+
+<script src="../app.js"></script>
+<script src="run-tests.js"></script>
+<script>
+(function () {
+  var rows = document.getElementById('rows');
+  var sum = document.getElementById('sum');
+  var res = (typeof globalThis !== 'undefined' ? globalThis.__RESULT : window.__RESULT) || { pass: 0, fail: 0, results: [] };
+  var frag = document.createDocumentFragment();
+
+  function fmt(v) {
+    if (typeof v === 'number') {
+      return (Math.abs(v) >= 1000) ? v.toLocaleString('en-US', { maximumFractionDigits: 0 }) : String(v);
+    }
+    return String(v);
+  }
+
+  res.results.forEach(function (r) {
+    var tr = document.createElement('tr');
+    tr.className = r.ok ? 'pass' : 'fail';
+    tr.innerHTML = '<td>' + (r.ok ? 'PASS' : 'FAIL') + '</td><td>' + r.name + '</td><td>' + fmt(r.expected) + '</td><td>' + fmt(r.actual) + '</td>';
+    frag.appendChild(tr);
+  });
+  rows.appendChild(frag);
+
+  sum.textContent = (res.fail === 0 ? '전체 통과 — ' : '실패 ' + res.fail + '건 — ') + 'PASS ' + res.pass + ' / FAIL ' + res.fail;
+  sum.className = 'sum ' + (res.fail === 0 ? 'ok' : 'fail');
+  document.title = (res.fail === 0 ? 'OK ' : 'FAIL ') + res.pass + '/' + (res.pass + res.fail);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>출산·육아 지원금 · 퇴직금 · 실업급여 계산기 3종 (2026 기준)</title>
+<meta name="description" content="2026년 기준 출산·육아 지원금(첫만남이용권·부모급여·아동수당·육아휴직급여 6+6), 퇴직금과 미사용 연차수당, 실업급여(구직급여)를 한 화면에서 바로 계산합니다. 상한액·하한액과 법령 근거, 신청 순서까지 정리했습니다." />
+<meta name="keywords" content="출산지원금 계산기, 육아휴직급여 계산기, 6+6 부모육아휴직제, 부모급여, 아동수당, 첫만남이용권, 퇴직금 계산기, 연차수당 계산기, 실업급여 계산기, 구직급여, 2026" />
+<meta name="author" content="생활 계산소" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://sdn6517-cmd.github.io/life-hr-calc/" />
+<meta name="theme-color" content="#8f2f4d" />
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="생활 계산소" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:title" content="출산·육아 지원금 · 퇴직금 · 실업급여 계산기 3종 (2026 기준)" />
+<meta property="og:description" content="첫만남이용권·부모급여·아동수당·육아휴직급여부터 퇴직금·연차수당·실업급여까지, 2026년 기준으로 바로 계산합니다." />
+<meta property="og:url" content="https://sdn6517-cmd.github.io/life-hr-calc/" />
+<meta property="og:image" content="https://sdn6517-cmd.github.io/life-hr-calc/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="출산·육아 지원금 · 퇴직금 · 실업급여 계산기" />
+<meta name="twitter:description" content="2026년 기준 상한액·하한액을 반영한 3가지 계산기. 근거 법령과 신청 체크리스트 포함." />
+<meta name="twitter:image" content="https://sdn6517-cmd.github.io/life-hr-calc/og-image.png" />
+
+<!-- Pretendard (CDN) -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="stylesheet" crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%238f2f4d'/%3E%3Cpath%20d='M9%2017h14v8h-4v-5h-6v5H9z'%20fill='%23fff'/%3E%3Ccircle%20cx='16'%20cy='11'%20r='4'%20fill='%23fff'/%3E%3C/svg%3E" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://sdn6517-cmd.github.io/life-hr-calc/#app",
+      "name": "생활 계산소 — 출산·육아 지원금 · 퇴직금 · 실업급여 계산기",
+      "url": "https://sdn6517-cmd.github.io/life-hr-calc/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any (웹 브라우저)",
+      "inLanguage": "ko-KR",
+      "isAccessibleForFree": true,
+      "description": "2026년 기준 첫만남이용권·부모급여·아동수당·육아휴직급여(6+6), 퇴직금·미사용 연차수당, 실업급여(구직급여)를 입력 즉시 계산하는 무료 웹 계산기입니다.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+      "featureList": [
+        "출산·육아 지원금 통합 계산(첫만남이용권·부모급여·아동수당·육아휴직급여)",
+        "부모 함께 육아휴직제(6+6) 월별 상한 시뮬레이션",
+        "퇴직금 계산(평균임금 3개월·상여금 3/12·통상임금 비교)",
+        "미사용 연차수당 계산(통상임금·209시간 기준)",
+        "실업급여 계산(2026년 상한 68,100원·하한 66,048원·소정급여일수)"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sdn6517-cmd.github.io/life-hr-calc/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "첫만남이용권은 얼마이고 언제까지 쓸 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2024년 1월 1일 이후 출생아부터 첫째는 200만원, 둘째 이상은 300만원입니다. 국민행복카드에 이용권(포인트)으로 들어오며, 출생일부터 2년 안에 사용해야 합니다. 유흥·사행 업종, 위생업종(이·미용실 제외), 레저 업종, 면세점 등에서는 쓸 수 없습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "부모급여는 2026년에도 0세 100만원, 1세 50만원인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네. 2026년 부모급여는 0세 월 100만원, 1세 월 50만원으로 2025년과 같습니다. 만 2세 미만(0~23개월) 모든 아동이 소득 기준 없이 받을 수 있고, 어린이집에 다니면 보육료가 먼저 결제되어 0세는 월 41만 6,000원, 1세는 차액이 없습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "아동수당은 몇 살까지, 얼마를 받나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2026년에는 만 9세 미만 아동에게 월 10만원을 지급합니다. 2026년 3월 아동수당법 개정으로 2030년까지 매년 1세씩 늘어나 2027년 만 10세 미만, 2030년 만 13세 미만이 됩니다. 거주지에 따라 비수도권 10만 5,000원, 인구감소 우대지역 11만원, 특별지역 12만원이고, 인구감소지역에서 지역사랑상품권으로 받으면 1만원이 더해집니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "육아휴직급여 상한액은 얼마인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2025년 1월 1일 이후 개시한 육아휴직부터 1~3개월은 통상임금 100%에 월 상한 250만원, 4~6개월은 100%에 월 상한 200만원, 7개월 이후는 80%에 월 상한 160만원이고 월 하한은 70만원입니다. 2026년에도 이 구조가 그대로 유지되어 12개월을 모두 쓰면 최대 2,310만원입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "6+6 부모육아휴직제는 부모가 동시에 쉬어야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아닙니다. 자녀 생후 18개월 이내에 부모가 모두 육아휴직을 쓰면 동시에 쓰지 않아도, 기간이 겹치지 않아도 적용됩니다. 두 사람이 공통으로 사용한 기간을 기준으로 최대 첫 6개월까지 각자 통상임금 100%에 월 상한 250만·250만·300만·350만·400만·450만원이 적용됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "퇴직금은 어떻게 계산하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "퇴직금은 1일 평균임금 × 30일 × 재직일수 ÷ 365로 계산합니다. 평균임금은 퇴직 전 3개월에 지급된 임금총액을 그 기간의 총일수로 나눈 금액이고, 여기에 연간 정기 상여금의 3/12과 퇴직 전에 지급된 미사용 연차수당의 3/12을 더합니다. 이렇게 구한 평균임금이 통상임금보다 적으면 통상임금으로 계산합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "연차수당은 하루 얼마로 계산하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1일 통상임금으로 계산합니다. 월 통상임금을 월 소정근로시간(주 40시간이면 209시간)으로 나눈 뒤 8시간을 곱한 금액이 1일 통상임금이고, 여기에 미사용 연차일수를 곱합니다. 예를 들어 월 통상임금 300만원이면 1일 11만 4,832원, 5일이면 57만 4,160원입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "실업급여 상한액과 하한액은 얼마인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2026년 1월 1일 이후 이직자는 1일 상한 68,100원, 하한 66,048원(1일 8시간 기준)입니다. 하한액은 2026년 최저임금 10,320원의 80%에 8시간을 곱한 금액이고, 상한액은 급여기초 임금일액 상한 113,500원의 60%입니다. 2025년 이직자는 종전 상한 66,000원이 적용됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "실업급여는 며칠 동안 받을 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "이직 당시 만 나이와 고용보험 총 피보험기간에 따라 120일에서 270일까지입니다. 50세 미만은 1년 미만 120일, 1~3년 150일, 3~5년 180일, 5~10년 210일, 10년 이상 240일이고, 50세 이상이거나 장애인은 1~3년 180일, 3~5년 210일, 5~10년 240일, 10년 이상 270일입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "계산 결과가 실제 지급액과 다른 이유는 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "계산기는 공개된 법령과 고시의 표준값으로 계산합니다. 실제로는 회사 취업규칙의 상여금·수당 항목, 평균임금 산정 제외기간, 지자체 조례, 고용센터의 수급자격 심사에 따라 달라질 수 있습니다. 중요한 결정 전에는 담당 기관이나 노무사에게 확인하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2027년에는 출산·육아 지원이 어떻게 바뀌나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "정부는 2027년 7월 1일 이후 출생아부터 첫만남이용권·부모급여·아동수당을 아이맞이지원금과 아동기본수당으로 통합하는 방안을 발표했습니다. 아이맞이지원금은 첫째 1,000만원·둘째 1,200만원·셋째 이상 1,500만원을 출생 후 1년간 분기별 현금으로 지급하고, 아동기본수당은 0~13세 미만에 월 20만원(현금 10만원+지역사랑상품권 10만원)입니다. 다만 국회 심의 전 정부안이라 확정된 내용이 아닙니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- =========================================================================
+     광고 스크립트 삽입 위치 (Google AdSense)
+     승인 후 아래 주석을 풀고 ca-pub-XXXXXXXXXXXXXXXX, data-ad-slot 값을 실제 값으로 바꾸세요.
+     스크립트는 </head> 직전에 한 번만 넣으면 됩니다.
+
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+     Taboola / MGID 는 </body> 직전에 한 번 삽입하고, 광고 지면은 아래
+     .ad-slot (ad-slot-top / ad-slot-infeed / ad-slot-bottom) 안에 넣습니다.
+     ========================================================================= -->
+</head>
+<body>
+<a class="skip-link" href="#calculators">계산기로 바로 가기</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">活</span>
+      <span>생활 계산소
+        <small>출산·육아 · 퇴직금 · 실업급여</small>
+      </span>
+    </a>
+    <nav class="header-nav" aria-label="주요 메뉴">
+      <a href="#calculators" data-tab="childbirth">출산·육아</a>
+      <a href="#calculators" data-tab="severance">퇴직금</a>
+      <a href="#calculators" data-tab="unemployment">실업급여</a>
+      <a href="#guide">해설</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= 히어로 ================= -->
+  <section class="hero">
+    <div class="wrap">
+      <h1>출산·육아 지원금부터 퇴직금·실업급여까지,<br />한 화면에서 계산하세요</h1>
+      <p class="lead">2026년 11월 기준 법령과 고용노동부 고시를 반영했습니다. 값을 바꾸면 결과가 즉시 다시 계산되고, 어떤 상한액·하한액이 적용됐는지와 계산 근거도 함께 보여 드립니다.</p>
+      <div class="hero-meta">
+        <span>📅 기준일 2026. 11. 15.</span>
+        <span>🔒 입력값은 서버로 전송되지 않습니다</span>
+        <span>📱 모바일·PC 동일</span>
+        <span>✅ 자동 검증 210항목</span>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="계산기 선택">
+        <button class="tab" role="tab" id="tab-childbirth" data-tab="childbirth" aria-controls="panel-childbirth" aria-selected="true">
+          <span class="tab-num">1</span>출산·육아 지원금
+        </button>
+        <button class="tab" role="tab" id="tab-severance" data-tab="severance" aria-controls="panel-severance" aria-selected="false" tabindex="-1">
+          <span class="tab-num">2</span>퇴직금·연차수당
+        </button>
+        <button class="tab" role="tab" id="tab-unemployment" data-tab="unemployment" aria-controls="panel-unemployment" aria-selected="false" tabindex="-1">
+          <span class="tab-num">3</span>실업급여
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 계산기 ================= -->
+  <div class="wrap" id="calculators">
+
+    <!-- 광고: 상단 (ad-slot-top) -->
+    <aside class="ad-slot" id="ad-slot-top" aria-label="광고">
+      <div class="ad-inner">
+        <div>
+          <b>광고 영역 · ad-slot-top</b>
+          <span>Google AdSense 반응형 또는 Taboola/MGID 위젯을 이 자리에 넣습니다.</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ---------- 1. 출산·육아 지원금 ---------- -->
+    <section class="panel section section-tight" id="panel-childbirth" data-panel="childbirth" role="tabpanel" aria-labelledby="tab-childbirth">
+      <div class="calc-grid">
+
+        <form class="card" id="cb-form" onsubmit="return false;">
+          <div class="card-head">
+            <span class="step">1</span>
+            <h2>출산·육아 지원금 통합 계산기</h2>
+          </div>
+          <p class="card-sub">첫만남이용권 + 부모급여 24개월 + 아동수당 24개월 · 2026년 기준</p>
+
+          <div class="field">
+            <span class="field-label">출생 순위</span>
+            <div class="segmented" role="group" aria-label="출생 순위">
+              <label><input type="radio" name="cb-order" value="1" checked /><span>첫째</span></label>
+              <label><input type="radio" name="cb-order" value="2" /><span>둘째</span></label>
+              <label><input type="radio" name="cb-order" value="3" /><span>셋째 이상</span></label>
+            </div>
+            <span class="hint">첫만남이용권은 첫째 200만원, 둘째 이상 300만원입니다.</span>
+          </div>
+
+          <div class="field">
+            <span class="field-label">거주 지역 (아동수당 가산)</span>
+            <div class="segmented grid-wrap" role="group" aria-label="거주 지역">
+              <label><input type="radio" name="cb-region" value="metro" checked /><span>수도권</span></label>
+              <label><input type="radio" name="cb-region" value="nonmetro" /><span>비수도권</span></label>
+              <label><input type="radio" name="cb-region" value="depopPref" /><span>인구감소 우대</span></label>
+              <label><input type="radio" name="cb-region" value="depopSpec" /><span>인구감소 특별</span></label>
+            </div>
+            <label class="switch" style="margin-top:10px">
+              <input type="checkbox" id="cb-voucher" />
+              <span>지역사랑상품권으로 수령 (+1만원, 인구감소지역만)</span>
+            </label>
+          </div>
+
+          <div class="field">
+            <span class="field-label">양육 방식</span>
+            <div class="segmented" role="group" aria-label="양육 방식">
+              <label><input type="radio" name="cb-care" value="home" checked /><span>가정양육</span></label>
+              <label><input type="radio" name="cb-care" value="daycare" /><span>어린이집</span></label>
+            </div>
+            <span class="hint">어린이집을 쓰면 보육료가 먼저 빠져 0세는 월 41만 6,000원, 1세는 현금 차액이 없습니다.</span>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="field">
+            <span class="field-label">육아휴직 제도</span>
+            <div class="segmented" role="group" aria-label="육아휴직 제도">
+              <label><input type="radio" name="cb-leave-type" value="together" checked /><span>6+6 함께</span></label>
+              <label><input type="radio" name="cb-leave-type" value="general" /><span>일반</span></label>
+              <label><input type="radio" name="cb-leave-type" value="none" /><span>쓰지 않음</span></label>
+            </div>
+            <span class="hint">6+6(부모 함께 육아휴직제)은 자녀 생후 18개월 이내에 부모가 모두 휴직할 때 적용됩니다.</span>
+          </div>
+
+          <div class="grid-2">
+            <div>
+              <label class="field-label" for="cb-wage-a">본인 월 통상임금</label>
+              <div class="field-row">
+                <input type="number" id="cb-wage-a" min="0" max="20000000" step="100000" value="3000000" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="cb-wage-b">배우자 월 통상임금</label>
+              <div class="field-row">
+                <input type="number" id="cb-wage-b" min="0" max="20000000" step="100000" value="3000000" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+          </div>
+          <div class="chips" role="group" aria-label="통상임금 빠른 선택">
+            <button type="button" class="chip" data-set='{"cb-wage-a":2500000,"cb-wage-b":2500000}'>250만원</button>
+            <button type="button" class="chip" data-set='{"cb-wage-a":3000000,"cb-wage-b":3000000}'>300만원</button>
+            <button type="button" class="chip" data-set='{"cb-wage-a":4000000,"cb-wage-b":4000000}'>400만원</button>
+            <button type="button" class="chip" data-set='{"cb-wage-a":5000000,"cb-wage-b":5000000}'>500만원</button>
+          </div>
+
+          <div class="grid-2" style="margin-top:12px">
+            <div>
+              <label class="field-label" for="cb-months-a">본인 사용 개월</label>
+              <div class="field-row">
+                <input type="number" id="cb-months-a" min="0" max="18" step="1" value="6" inputmode="numeric" />
+                <span class="unit">개월</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="cb-months-b">배우자 사용 개월</label>
+              <div class="field-row">
+                <input type="number" id="cb-months-b" min="0" max="18" step="1" value="6" inputmode="numeric" />
+                <span class="unit">개월</span>
+              </div>
+            </div>
+          </div>
+          <span class="hint">부모가 각각 3개월 이상 쓰면 육아휴직 기간이 1년에서 1년 6개월로 늘어납니다.</span>
+        </form>
+
+        <div class="card result-card">
+          <div class="result-hero" aria-live="polite">
+            <div class="label">출생 후 24개월 현금 지원 합계</div>
+            <div class="value" id="cb-total">22,400,000원</div>
+            <div class="sub" id="cb-total-ko">2,240만원 · 육아휴직급여 별도</div>
+            <div class="hero-foot">
+              <span class="badge badge-ok" id="cb-badge">2026년 기준 · 가정양육</span>
+            </div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi">
+              <div class="k-label">첫만남이용권</div>
+              <div class="k-value" id="cb-first-meet">2,000,000원</div>
+              <div class="k-sub">출생 1회 · 국민행복카드</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">부모급여 24개월</div>
+              <div class="k-value" id="cb-parent-total">18,000,000원</div>
+              <div class="k-sub"><span id="cb-parent-0">1,000,000원</span> (0세) · <span id="cb-parent-1">500,000원</span> (1세)</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">아동수당 월액</div>
+              <div class="k-value" id="cb-child-monthly">100,000원</div>
+              <div class="k-sub">만 9세 미만 · 2026년</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">아동수당 24개월</div>
+              <div class="k-value" id="cb-child-total">2,400,000원</div>
+              <div class="k-sub">지역 가산 반영</div>
+            </div>
+          </div>
+
+          <hr class="divider" />
+
+          <h3 class="result-title">육아휴직급여 <span class="muted small" id="cb-leave-total">34,000,000원</span></h3>
+          <div class="table-wrap">
+            <table class="mini-table">
+              <thead>
+                <tr><th>본인</th><th>배우자</th></tr>
+              </thead>
+              <tbody>
+                <tr><td class="num" id="cb-leave-a">17,000,000원</td><td class="num" id="cb-leave-b">17,000,000원</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-wrap">
+            <table class="mini-table">
+              <thead>
+                <tr><th>사용 월</th><th class="num">본인</th><th class="num">배우자</th></tr>
+              </thead>
+              <tbody id="cb-leave-rows">
+                <tr><td>1개월</td><td class="num">2,500,000원</td><td class="num">2,500,000원</td></tr>
+                <tr><td>2개월</td><td class="num">2,500,000원</td><td class="num">2,500,000원</td></tr>
+                <tr><td>3개월</td><td class="num">3,000,000원</td><td class="num">3,000,000원</td></tr>
+                <tr><td>4개월</td><td class="num">3,000,000원</td><td class="num">3,000,000원</td></tr>
+                <tr><td>5개월</td><td class="num">3,000,000원</td><td class="num">3,000,000원</td></tr>
+                <tr><td>6개월</td><td class="num">3,000,000원</td><td class="num">3,000,000원</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="kpi highlight" style="margin-top:14px">
+            <div class="k-label">현금 지원 + 육아휴직급여 합계</div>
+            <div class="k-value" id="cb-grand-total">56,400,000원</div>
+            <div class="k-sub">2026년 상한액 기준 추정</div>
+          </div>
+
+          <div class="note" id="cb-note"></div>
+          <div class="result-actions">
+            <button type="button" class="btn" data-copy="childbirth">결과 복사</button>
+            <a class="btn" href="#guide-childbirth">계산 근거 보기</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2027 개편 미리보기 -->
+      <div class="card" style="margin-top:16px">
+        <div class="card-head">
+          <span class="step">2027</span>
+          <h3>2027년 개편안 미리보기 — 아이맞이지원금 · 아동기본수당</h3>
+        </div>
+        <p class="card-sub">2026년 8월 28일 보건복지부 발표 정부안 · 국회 심의 전이라 확정된 내용이 아닙니다.</p>
+        <div class="kpi-grid">
+          <div class="kpi">
+            <div class="k-label">아이맞이지원금 (출생 1회)</div>
+            <div class="k-value" id="cb-27-grant">1,000만원</div>
+            <div class="k-sub">첫째 1,000 / 둘째 1,200 / 셋째 1,500만원</div>
+          </div>
+          <div class="kpi">
+            <div class="k-label">아동기본수당 (월)</div>
+            <div class="k-value" id="cb-27-monthly">50만원</div>
+            <div class="k-sub">현금 10만 + 지역사랑상품권 10만</div>
+          </div>
+          <div class="kpi">
+            <div class="k-label">24개월 합계 (개편안)</div>
+            <div class="k-value" id="cb-27-total">2,200만원</div>
+            <div class="k-sub">아이맞이지원금 + 아동기본수당 24개월</div>
+          </div>
+          <div class="kpi highlight">
+            <div class="k-label">2026년 제도와 비교</div>
+            <div class="k-value" id="cb-27-diff">−40만원</div>
+            <div class="k-sub">같은 조건 24개월 기준</div>
+          </div>
+        </div>
+        <div class="note small">
+          2027년 7월 1일 이후 출생아에게 적용하는 정부안이고, 그 이전 출생아는 기존 첫만남이용권·부모급여·아동수당을 받습니다.
+          우대지역 가산은 ‘지역사랑상품권 수령’을 체크하면 함께 반영됩니다(지방우대지수 고시 전).
+          앞의 24개월만 비교하면 금액 차이가 작지만, <strong>13세까지 누적</strong>하면 수도권·가정양육·첫째 기준으로 2026년 제도 약 3,080만원, 개편안 약 4,840만원으로 벌어집니다(아동기본수당 상품권분 포함).
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 2. 퇴직금·연차수당 ---------- -->
+    <section class="panel section section-tight" id="panel-severance" data-panel="severance" role="tabpanel" aria-labelledby="tab-severance" hidden>
+      <div class="calc-grid">
+
+        <form class="card" id="sv-form" onsubmit="return false;">
+          <div class="card-head">
+            <span class="step">2</span>
+            <h2>퇴직금 · 연차수당 계산기</h2>
+          </div>
+          <p class="card-sub">평균임금 3개월 + 상여금·연차수당 3/12 · 근로자퇴직급여 보장법</p>
+
+          <div class="grid-2">
+            <div>
+              <label class="field-label" for="sv-hire">입사일</label>
+              <input type="date" id="sv-hire" value="2019-03-04" />
+            </div>
+            <div>
+              <label class="field-label" for="sv-last">마지막 근무일</label>
+              <input type="date" id="sv-last" value="2026-11-14" />
+            </div>
+          </div>
+          <span class="hint">퇴사일이 아니라 마지막으로 일한 날을 넣습니다. 재직일수는 양 끝을 포함해 계산합니다.</span>
+
+          <hr class="divider" />
+
+          <div class="grid-2">
+            <div>
+              <label class="field-label" for="sv-base">월 기본급</label>
+              <div class="field-row">
+                <input type="number" id="sv-base" min="0" step="10000" value="2500000" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="sv-fixed">월 고정수당</label>
+              <div class="field-row">
+                <input type="number" id="sv-fixed" min="0" step="10000" value="400000" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+          </div>
+          <div class="field" style="margin-top:10px">
+            <label class="field-label" for="sv-variable">최근 3개월 변동수당 합계 (연장·야간·휴일수당 등)</label>
+            <div class="field-row">
+              <input type="number" id="sv-variable" min="0" step="10000" value="0" inputmode="numeric" />
+              <span class="unit">원</span>
+            </div>
+            <span class="hint">3개월치를 모아 넣습니다. 급여가 매달 같다면 기본급·고정수당만 넣으면 됩니다.</span>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="sv-bonus">최근 1년 정기 상여금 총액</label>
+            <div class="field-row">
+              <input type="number" id="sv-bonus" min="0" step="100000" value="3000000" inputmode="numeric" />
+              <span class="unit">원</span>
+            </div>
+            <span class="hint">취업규칙·근로계약에 정해진 정기 상여금만. 성과급·격려금은 임금성이 없으면 빠집니다.</span>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="sv-leave-pay">퇴직 전 1년 내 지급된 연차수당</label>
+            <div class="field-row">
+              <input type="number" id="sv-leave-pay" min="0" step="10000" value="0" inputmode="numeric" />
+              <span class="unit">원</span>
+            </div>
+            <span class="hint">이미 지급된 지난해 연차수당만. 퇴직으로 새로 발생한 연차수당은 평균임금에서 빠집니다.</span>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="grid-2">
+            <div>
+              <label class="field-label" for="sv-ordinary">월 통상임금</label>
+              <div class="field-row">
+                <input type="number" id="sv-ordinary" min="0" step="10000" value="2900000" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="sv-hours">주 소정근로시간</label>
+              <div class="field-row">
+                <input type="number" id="sv-hours" min="1" max="60" step="1" value="40" inputmode="numeric" />
+                <span class="unit">시간</span>
+              </div>
+            </div>
+          </div>
+          <span class="hint">통상임금은 기본급과 정기·일률적으로 지급되는 수당입니다. 월 소정근로시간은 주 40시간이면 209시간입니다.</span>
+
+          <div class="field" style="margin-top:12px">
+            <label class="field-label" for="sv-days">미사용 연차일수</label>
+            <div class="field-row">
+              <input type="number" id="sv-days" min="0" max="60" step="0.5" value="8" inputmode="decimal" />
+              <span class="unit">일</span>
+            </div>
+            <span class="hint">올해 발생분 중 남은 일수. 근속에 따른 발생일수는 <strong id="sv-accrued">18일</strong>입니다.</span>
+            <div class="chips" role="group" aria-label="연차일수 빠른 선택">
+              <button type="button" class="chip" data-set='{"sv-days":0}'>0일</button>
+              <button type="button" class="chip" data-set='{"sv-days":5}'>5일</button>
+              <button type="button" class="chip" data-set='{"sv-days":8}'>8일</button>
+              <button type="button" class="chip" data-set='{"sv-days":15}'>15일</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="card result-card">
+          <div class="result-hero" aria-live="polite">
+            <div class="label">퇴직금 + 미사용 연차수당</div>
+            <div class="value" id="sv-total">26,552,765원</div>
+            <div class="sub" id="sv-total-ko">2,655만원 (퇴직금 + 연차수당)</div>
+            <div class="hero-foot">
+              <span class="badge badge-ok" id="sv-badge">통상임금이 더 높아 통상임금 적용</span>
+            </div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi highlight">
+              <div class="k-label">법정 퇴직금</div>
+              <div class="k-value" id="sv-severance">25,664,733원</div>
+              <div class="k-sub">평균임금 × 30일 × 재직일수/365</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">미사용 연차수당</div>
+              <div class="k-value" id="sv-leave-allowance">888,032원</div>
+              <div class="k-sub">1일 통상임금 × 미사용일수</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">1일 평균임금</div>
+              <div class="k-value" id="sv-day-avg">102,717원</div>
+              <div class="k-sub">3개월 임금총액 ÷ 총일수</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">1일 통상임금</div>
+              <div class="k-value" id="sv-day-ordinary">111,004원</div>
+              <div class="k-sub">월 통상임금 ÷ <span id="sv-monthly-hours">209</span>시간 × 8</div>
+            </div>
+          </div>
+
+          <hr class="divider" />
+          <h3 class="result-title">평균임금 산정 과정</h3>
+          <div class="table-wrap">
+            <table class="mini-table">
+              <tbody id="sv-rows"></tbody>
+            </table>
+          </div>
+
+          <div class="kpi-grid" style="margin-top:12px">
+            <div class="kpi">
+              <div class="k-label">재직일수</div>
+              <div class="k-value" id="sv-service">2,813일</div>
+              <div class="k-sub" id="sv-service-years">7년 8개월</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">3개월 총일수</div>
+              <div class="k-value" id="sv-months3">92일</div>
+              <div class="k-sub">마지막 근무일 기준</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">적용 임금</div>
+              <div class="k-value" id="sv-applied">111,004원</div>
+              <div class="k-sub" id="sv-basis">통상임금 기준</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">연차 발생일수</div>
+              <div class="k-value" id="sv-accrued-2">18일</div>
+              <div class="k-sub">근로기준법 제60조</div>
+            </div>
+          </div>
+
+          <div class="note small">퇴직금은 퇴직일부터 14일 안에 지급해야 하고, 늦어지면 지연이자(연 20%)가 붙습니다. 1년 미만 근속은 법정 퇴직금 대상이 아니고, 주 15시간 미만 근로자도 대상이 아닙니다.</div>
+          <div class="result-actions">
+            <button type="button" class="btn" data-copy="severance">결과 복사</button>
+            <a class="btn" href="#guide-severance">계산 근거 보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 3. 실업급여 ---------- -->
+    <section class="panel section section-tight" id="panel-unemployment" data-panel="unemployment" role="tabpanel" aria-labelledby="tab-unemployment" hidden>
+      <div class="calc-grid">
+
+        <form class="card" id="ui-form" onsubmit="return false;">
+          <div class="card-head">
+            <span class="step">3</span>
+            <h2>실업급여(구직급여) 계산기</h2>
+          </div>
+          <p class="card-sub">2026년 1월 1일 이후 이직자 기준 · 고용보험법 제45조~제50조</p>
+
+          <div class="grid-2">
+            <div>
+              <label class="field-label" for="ui-age">이직 당시 만 나이</label>
+              <div class="field-row">
+                <input type="number" id="ui-age" min="15" max="80" step="1" value="38" inputmode="numeric" />
+                <span class="unit">세</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="ui-hours">1일 소정근로시간</label>
+              <div class="field-row">
+                <input type="number" id="ui-hours" min="1" max="8" step="1" value="8" inputmode="numeric" />
+                <span class="unit">시간</span>
+              </div>
+            </div>
+          </div>
+          <label class="switch" style="margin-top:10px">
+            <input type="checkbox" id="ui-disabled" />
+            <span>장애인 (50세 이상과 같은 지급일수 적용)</span>
+          </label>
+
+          <div class="field" style="margin-top:14px">
+            <span class="field-label">고용보험 총 피보험기간</span>
+            <div class="grid-2">
+              <div class="field-row">
+                <input type="number" id="ui-years" min="0" max="50" step="1" value="4" inputmode="numeric" aria-label="가입기간 년" />
+                <span class="unit">년</span>
+              </div>
+              <div class="field-row">
+                <input type="number" id="ui-months" min="0" max="11" step="1" value="0" inputmode="numeric" aria-label="가입기간 개월" />
+                <span class="unit">개월</span>
+              </div>
+            </div>
+            <span class="hint">이전 직장의 피보험기간도 합산합니다. 이미 구직급여를 받은 기간은 빠집니다.</span>
+            <div class="chips" role="group" aria-label="가입기간 빠른 선택">
+              <button type="button" class="chip" data-set='{"ui-years":0,"ui-months":11}'>1년 미만</button>
+              <button type="button" class="chip" data-set='{"ui-years":2,"ui-months":0}'>2년</button>
+              <button type="button" class="chip" data-set='{"ui-years":4,"ui-months":0}'>4년</button>
+              <button type="button" class="chip" data-set='{"ui-years":10,"ui-months":0}'>10년 이상</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="ui-wage3m">이직 전 3개월 임금 총액 (세전)</label>
+            <div class="field-row">
+              <input type="number" id="ui-wage3m" min="0" step="100000" value="12000000" inputmode="numeric" />
+              <span class="unit">원</span>
+            </div>
+            <span class="hint">기본급·수당·상여를 포함한 3개월 합계. 월급이 같았다면 월급 × 3입니다.</span>
+            <div class="chips" role="group" aria-label="월급 빠른 선택">
+              <button type="button" class="chip" data-set='{"ui-wage3m":7500000}'>월 250만</button>
+              <button type="button" class="chip" data-set='{"ui-wage3m":9000000}'>월 300만</button>
+              <button type="button" class="chip" data-set='{"ui-wage3m":12000000}'>월 400만</button>
+              <button type="button" class="chip" data-set='{"ui-wage3m":15000000}'>월 500만</button>
+            </div>
+          </div>
+
+          <details class="details-box">
+            <summary>3개월 총일수 직접 입력 (정확 계산)</summary>
+            <div class="details-body">
+              <label class="field-label" for="ui-days3m">이직 전 3개월의 총일수</label>
+              <div class="field-row">
+                <input type="number" id="ui-days3m" min="28" max="93" step="1" value="91" inputmode="numeric" />
+                <span class="unit">일</span>
+              </div>
+              <span class="hint">기본값 91일. 실제 달력일수(89~92일)로 바꾸면 1일 급여가 조금 달라집니다.</span>
+            </div>
+          </details>
+        </form>
+
+        <div class="card result-card">
+          <div class="result-hero" aria-live="polite">
+            <div class="label">총 예상 수급액</div>
+            <div class="value" id="ui-total">12,258,000원</div>
+            <div class="sub" id="ui-total-ko">1,225만원 · 180일 기준</div>
+            <div class="hero-foot">
+              <span class="badge badge-ok" id="ui-badge">상한액 적용</span>
+              <span class="badge badge-ok">1일 <span id="ui-daily">68,100원</span></span>
+            </div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi highlight">
+              <div class="k-label">1일 구직급여액</div>
+              <div class="k-value" id="ui-daily-2">68,100원</div>
+              <div class="k-sub"><span id="ui-applied">상한액</span> 적용</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">소정급여일수</div>
+              <div class="k-value" id="ui-days">180일</div>
+              <div class="k-sub">가입 <span id="ui-ins">48개월</span> 기준</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">월 환산 (30일)</div>
+              <div class="k-value" id="ui-monthly">2,043,000원</div>
+              <div class="k-sub">실제 지급은 실업인정 단위</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">기초일액</div>
+              <div class="k-value" id="ui-base">131,868원</div>
+              <div class="k-sub">3개월 임금총액 ÷ 총일수</div>
+            </div>
+          </div>
+
+          <hr class="divider" />
+          <h3 class="result-title">상한·하한 적용 확인</h3>
+          <div class="table-wrap">
+            <table class="mini-table">
+              <tbody>
+                <tr><td>평균임금의 60%</td><td class="num" id="ui-raw60">79,120원</td></tr>
+                <tr><td>2026년 1일 상한액</td><td class="num" id="ui-cap">68,100원</td></tr>
+                <tr><td>2026년 1일 하한액 (8시간)</td><td class="num" id="ui-floor">66,048원</td></tr>
+                <tr class="is-total"><td>적용 급여일액</td><td class="num" id="ui-daily-3">68,100원</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="note" id="ui-note"></div>
+          <div class="note warn small">구직급여는 <strong>비자발적 이직</strong>이고 이직 전 18개월 중 피보험단위기간이 180일 이상이어야 합니다. 자발적 퇴사는 원칙적으로 받을 수 없고, 권고사직·계약만료·정년 등만 인정됩니다. 실제 지급은 고용센터의 수급자격 심사와 실업인정 결과에 따릅니다.</div>
+          <div class="result-actions">
+            <button type="button" class="btn" data-copy="unemployment">결과 복사</button>
+            <a class="btn" href="#guide-unemployment">계산 근거 보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 광고: 본문 중간 (ad-slot-infeed) -->
+    <aside class="ad-slot" id="ad-slot-infeed" aria-label="광고">
+      <div class="ad-inner">
+        <div>
+          <b>광고 영역 · ad-slot-infeed</b>
+          <span>계산기와 해설 사이에 들어가는 본문 중간 광고 지면입니다.</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ================= 해설 ================= -->
+  <div class="wrap section" id="guide">
+    <article class="content">
+
+      <section id="guide-childbirth">
+        <h2>1. 2026년 출산·육아 지원금, 이렇게 받습니다</h2>
+        <p>출산 직후 받는 지원은 <strong>한 번에 목돈으로 들어오는 첫만남이용권</strong>, <strong>0~23개월 동안 매달 나오는 부모급여</strong>, <strong>초등학교 저학년까지 이어지는 아동수당</strong>, 그리고 <strong>일을 쉬는 동안 받는 육아휴직급여</strong>로 나뉩니다. 이름은 비슷해도 신청 창구와 지급 방식이 다르기 때문에, 한 번에 정리해 두지 않으면 놓치기 쉽습니다.</p>
+
+        <div class="table-wrap">
+          <table class="mini-table compare">
+            <thead>
+              <tr><th>지원</th><th class="num">2026년 금액</th><th>대상</th><th>지급 방식</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>첫만남이용권</td><td class="num">첫째 200만<br />둘째 이상 300만</td><td>2024.1.1 이후 출생아</td><td>국민행복카드 이용권(1회)</td></tr>
+              <tr><td>부모급여</td><td class="num">0세 월 100만<br />1세 월 50만</td><td>만 2세 미만 모든 아동</td><td>매월 25일 현금</td></tr>
+              <tr><td>아동수당</td><td class="num">월 10만~13만</td><td>만 9세 미만</td><td>매월 25일 현금</td></tr>
+              <tr><td>육아휴직급여</td><td class="num">월 최대 250만<br />(6+6은 450만)</td><td>만 8세 이하 자녀를 둔 근로자</td><td>고용센터 신청·매월 지급</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>첫만남이용권 — 출생 직후 한 번 받는 200만·300만원</h3>
+        <p>2024년 1월 1일 이후 태어난 아이부터 <strong>첫째 200만원, 둘째 이상 300만원</strong>이 국민행복카드에 이용권(포인트)으로 들어옵니다. 현금이 아니라 카드 포인트이기 때문에 <strong>출생일부터 2년 안</strong>에 써야 하고, 남은 금액은 사라집니다. 산후조리원·병원비·유아용품·분유·기저귀 등에는 쓸 수 있지만 유흥·사행 업종, 위생업종(이·미용실 제외), 레저 업종, 면세점 등은 사용이 막혀 있습니다.</p>
+        <p>신청은 출생신고와 함께 주민센터에서 하거나 정부24의 ‘행복출산’ 원스톱 서비스로 한 번에 처리할 수 있습니다. 부모급여·아동수당과 신청서가 따로 놀지 않도록 같은 날 묶어서 넣는 것이 가장 안전합니다.</p>
+
+        <h3>부모급여 — 0세 100만원, 1세 50만원</h3>
+        <p>부모급여는 만 2세 미만(0~23개월) 모든 아동에게 지급되며 <strong>소득 기준이 없습니다</strong>. 2026년에는 2025년과 같은 0세 월 100만원, 1세 월 50만원입니다. 여기서 ‘0세’는 0~11개월(12개월), ‘1세’는 12~23개월(12개월)을 뜻합니다.</p>
+        <p>어린이집을 이용하면 부모급여가 그대로 현금으로 나오지 않습니다. <strong>보육료가 먼저 결제되고 차액만 현금</strong>으로 지급됩니다. 2026년 기준 0세반 보육료가 월 58만 4,000원이라 0세는 100만 − 58.4만 = <strong>월 41만 6,000원</strong>이 남고, 1세반 보육료 51만 5,000원은 부모급여 50만원보다 커서 <strong>현금 차액이 없습니다</strong>. 이때도 영유아보육료와 종일제 아이돌봄 서비스는 별도로 신청해야 합니다.</p>
+        <div class="callout">
+          <h4>신청 시점이 60일을 넘기면?</h4>
+          <p>출생일을 포함해 60일 안에 신청하면 출생한 달부터 소급해 받습니다. 60일이 지나면 신청한 달부터 지급되므로, 출생신고가 늦어졌다면 부모급여·아동수당을 먼저 신청하는 편이 좋습니다.</p>
+        </div>
+
+        <h3>아동수당 — 2026년부터 만 9세 미만, 월 10만~13만원</h3>
+        <p>2026년 3월 아동수당법이 개정되면서 지급 대상이 만 8세 미만에서 <strong>만 9세 미만</strong>으로 한 살 늘었습니다. 2026년 1월분부터 소급 적용되고, 2027년 만 10세 미만, 2028년 만 11세 미만으로 매년 1세씩 확대되어 <strong>2030년에는 만 13세 미만</strong>까지 이어집니다.</p>
+        <p>금액은 사는 곳에 따라 다릅니다. 수도권 월 10만원, 비수도권 10만 5,000원, 인구감소지역 우대 11만원, 특별 12만원이고, 인구감소지역에서 지역사랑상품권으로 받으면 1만원이 더해집니다. 지자체 조례와 시행 시기에 따라 달라지므로 거주지 주민센터에서 확인하는 것이 정확합니다.</p>
+
+        <h3>육아휴직급여 — 1~3개월 250만원, 6+6은 450만원까지</h3>
+        <p>2025년 1월 1일 이후 개시한 육아휴직부터 급여 구조가 바뀌었습니다. <strong>1~3개월은 통상임금 100%에 월 상한 250만원</strong>, <strong>4~6개월은 100%에 200만원</strong>, <strong>7개월 이후는 80%에 160만원</strong>이고 월 하한은 70만원입니다. 12개월을 모두 쓰면 최대 <strong>2,310만원</strong>, 복직 후에 주던 사후지급금(25%)도 폐지되어 휴직 중에 전액 받습니다.</p>
+        <p>부모가 모두 육아휴직을 쓰면 <strong>부모 함께 육아휴직제(6+6)</strong>가 적용됩니다. 자녀 생후 18개월 이내에 두 사람이 동시에 또는 순차적으로 휴직하면, 공통으로 사용한 첫 6개월의 상한이 <strong>250만 → 250만 → 300만 → 350만 → 400만 → 450만원</strong>으로 올라갑니다. 두 번째 사람이 휴직을 시작할 때 첫 번째 사람의 차액이 소급 정산됩니다.</p>
+        <div class="table-wrap">
+          <table class="mini-table">
+            <thead><tr><th>사용 월</th><th class="num">일반 상한</th><th class="num">6+6 상한</th></tr></thead>
+            <tbody>
+              <tr><td>1개월</td><td class="num">250만원</td><td class="num">250만원</td></tr>
+              <tr><td>2개월</td><td class="num">250만원</td><td class="num">250만원</td></tr>
+              <tr><td>3개월</td><td class="num">250만원</td><td class="num">300만원</td></tr>
+              <tr><td>4개월</td><td class="num">200만원</td><td class="num">350만원</td></tr>
+              <tr><td>5개월</td><td class="num">200만원</td><td class="num">400만원</td></tr>
+              <tr><td>6개월</td><td class="num">200만원</td><td class="num">450만원</td></tr>
+              <tr><td>7개월 이후</td><td class="num">160만원</td><td class="num">160만원</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>한부모 근로자는 첫 3개월 상한이 300만원으로 더 높습니다. 부모가 각각 3개월 이상 육아휴직을 쓰면 휴직 기간이 1년에서 <strong>1년 6개월</strong>로 늘어나고, 분할 사용은 3회까지 가능합니다. 신청은 회사가 아니라 <strong>고용24(work24.go.kr)</strong>에서 하고, 휴직이 끝난 날부터 12개월 안에 신청해야 합니다.</p>
+
+        <h3>함께 챙기면 좋은 제도 — 출산휴가·배우자휴가·육아기 단축근무</h3>
+        <p>육아휴직과 별개로, 출산 무렵에는 다음과 같은 제도가 함께 적용됩니다. 금액은 2026년 기준입니다.</p>
+        <div class="table-wrap">
+          <table class="mini-table compare">
+            <thead><tr><th>제도</th><th>기간</th><th>급여</th></tr></thead>
+            <tbody>
+              <tr><td>출산전후휴가</td><td>90일 (다태아 120일, 미숙아 100일)</td><td>통상임금 100%, 90일 기준 상한 660만원</td></tr>
+              <tr><td>배우자 출산휴가</td><td>20일 (배우자 출산일부터 120일 내)</td><td>통상임금 100%, 상한 168만 4,210원</td></tr>
+              <tr><td>육아기 근로시간 단축</td><td>자녀 만 12세 이하</td><td>최초 주 10시간분 통상임금 100%(상한 250만), 나머지 80%(상한 160만)</td></tr>
+              <tr><td>단기 육아휴직</td><td>1주 또는 2주, 자녀별 연 1회</td><td>육아휴직급여와 같은 기준으로 일할 계산</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>출산전후휴가 급여와 배우자 출산휴가 급여는 <strong>우선지원 대상기업</strong> 근로자에게 고용보험이 지급하고, 대기업은 회사가 지급한 뒤 정부가 일부를 지원합니다. 단기 육아휴직은 어린이집·학교 휴원, 방학, 자녀 질병·사고 입원 같은 사유가 있을 때 쓸 수 있고, 전체 육아휴직 기간(1년 6개월)에 포함되지만 분할 사용 횟수 3회에서는 차감되지 않습니다.</p>
+
+        <h3>2027년 개편 — 아이맞이지원금과 아동기본수당</h3>
+        <p>정부는 2026년 8월 28일 첫만남이용권·부모급여·아동수당을 <strong>아이맞이지원금</strong>과 <strong>아동기본수당</strong>으로 통합하는 방안을 발표했습니다. 아이맞이지원금은 첫째 1,000만원, 둘째 1,200만원, 셋째 이상 1,500만원을 출생 후 1년간 분기별로 네 번 현금 지급하고, 행정안전부 지방우대지수에 따른 우대지역은 500만원이 더해집니다. 아동기본수당은 0~13세 미만에 월 20만원(현금 10만원 + 지역사랑상품권 10만원), 우대지역 30만원이고, 0~1세 가정보육 아동은 월 30만원이 추가됩니다.</p>
+        <p>적용 시점은 <strong>2027년 7월 1일 이후 출생아</strong>로, 그 이전 출생아는 기존 제도를 그대로 적용받는 정부안입니다. 국회 심의 전이라 금액과 시행일이 바뀔 수 있으므로, 계산기의 ‘2027 개편 미리보기’는 참고용으로만 보시고 실제 신청 전에는 복지로와 보건복지부 안내를 확인하세요.</p>
+      </section>
+
+      <section id="guide-severance">
+        <h2>2. 퇴직금과 연차수당, 어디까지 임금으로 볼까</h2>
+        <p>퇴직금은 <strong>1일 평균임금 × 30일 × 재직일수 ÷ 365</strong>로 계산합니다. 여기서 평균임금이 얼마로 잡히느냐가 금액의 대부분을 결정합니다. 3개월 월급만 보는 것이 아니라 상여금과 지난해 연차수당이 일정 비율로 더해지고, 육아휴직·출산휴가처럼 임금이 나오지 않은 기간은 아예 빼고 계산하기 때문입니다.</p>
+
+        <h3>평균임금 = 3개월 임금총액 ÷ 3개월 총일수</h3>
+        <p>평균임금은 퇴직일 이전 3개월 동안 지급된 임금 총액을 그 기간의 총일수(보통 89~92일)로 나눈 금액입니다(근로기준법 제2조 제1항 제6호). 여기에 다음 두 가지가 더해집니다.</p>
+        <ul>
+          <li><strong>정기 상여금 × 3/12</strong> — 최근 1년간 지급된 상여금 전액을 12개월로 나눠 3개월분만 반영합니다. 지급 횟수와 상관없이 취업규칙·근로계약에 정해져 있거나 관행적으로 계속 지급된 상여금이면 포함됩니다.</li>
+          <li><strong>이미 지급된 연차수당 × 3/12</strong> — 퇴직 전에 실제로 지급된 지난해 연차수당만 해당합니다. 퇴직 때문에 새로 발생한 연차수당은 평균임금에 넣지 않고 별도로 정산합니다.</li>
+        </ul>
+        <p>반대로 <strong>수습 3개월 이내</strong>, 사용자 귀책으로 인한 휴업, 출산전후휴가·유산·사산휴가, 업무상 재해 요양, <strong>육아휴직</strong> 기간은 평균임금 산정에서 빠집니다(근로기준법 시행령 제2조). 육아휴직을 다녀온 뒤 퇴직하면 그 기간만큼 분모와 분자에서 함께 빠지므로, 복직 후 임금이 그대로라면 평균임금이 크게 낮아지지 않습니다. 다만 그 기간이 3개월을 넘으면 그 최초일을 기준으로 다시 계산합니다.</p>
+
+        <div class="callout warn">
+          <h4>평균임금이 통상임금보다 적으면?</h4>
+          <p>근로기준법 제2조 제2항에 따라 <strong>통상임금을 평균임금으로 봅니다</strong>. 단시간 근로자나 변동수당이 많지 않은 직장에서 퇴직금이 오히려 통상임금 기준보다 적어지는 경우가 있어, 계산기에서 두 금액을 나란히 보여 드립니다.</p>
+        </div>
+
+        <h3>연차수당 = 1일 통상임금 × 미사용 일수</h3>
+        <p>연차수당은 평균임금이 아니라 <strong>통상임금</strong>으로 계산합니다. 월 통상임금을 월 소정근로시간으로 나눈 뒤 8시간을 곱한 금액이 1일 통상임금입니다. 주 40시간 근무자의 월 소정근로시간은 209시간(주 40시간 + 주휴 8시간 = 48시간 × 365 ÷ 12 ÷ 7)입니다.</p>
+        <p>예를 들어 월 통상임금 300만원이면 1일 통상임금은 300만 ÷ 209 × 8 = <strong>11만 4,832원</strong>이고, 미사용 5일이면 <strong>57만 4,160원</strong>입니다. 여기서 통상임금은 기본급과 정기적·일률적으로 지급되는 수당을 말하며, 성과에 따라 달라지는 상여금이나 실제 근무일에 따라 나오는 연장수당은 빠집니다.</p>
+
+        <h3>연차는 며칠 생기나</h3>
+        <ul>
+          <li><strong>1년 미만</strong>: 1개월 개근 시 1일, 최대 11일. 이 연차는 발생일로부터 1년 안에 써야 하고, 쓰지 않으면 소멸합니다.</li>
+          <li><strong>1년 이상</strong>: 15일. 3년 이상 근속하면 최초 1년을 초과하는 2년마다 1일씩 더해져 최대 25일입니다.</li>
+          <li>연차수당 청구권의 소멸시효는 <strong>3년</strong>입니다. 회사가 돈으로 주지 않고 계속 쌓아 두었다면 시효를 확인해야 합니다.</li>
+        </ul>
+
+        <h3>퇴직금 중간정산</h3>
+        <p>원칙적으로 퇴직할 때 한꺼번에 정산하지만, 무주택자가 주택을 구입하거나 6개월 이상 요양이 필요한 경우, 법정 재해를 입은 경우 등 정해진 사유에 해당하면 중간정산을 요청할 수 있습니다. 중간정산을 하면 그 시점까지의 퇴직금이 지급되고 <strong>정산일부터 근속기간이 새로 시작</strong>됩니다. 회사가 임의로 중간정산을 요구하는 것은 허용되지 않으므로, 정산 내역과 근속 재산정 여부를 서면으로 확인해 두는 것이 안전합니다.</p>
+
+        <h3>퇴직금 지급 기한과 지연이자</h3>
+        <p>퇴직금은 퇴직일부터 <strong>14일 이내</strong>에 지급해야 합니다(근로자퇴직급여 보장법 제9조). 기한을 넘기면 지연이자 연 20%가 붙고, 지급 능력이 없거나 근로자가 동의하면 14일을 넘길 수는 있지만 그 경우에도 지연이자는 발생합니다. 퇴직연금 DC형에 가입되어 있다면 회사가 매년 임금총액의 1/12 이상을 적립하므로 계산 방식이 다릅니다. 계산기는 법정 퇴직금(DB형·퇴직금제도) 기준입니다.</p>
+
+        <h3>5인 미만 사업장이라면</h3>
+        <p>현재 근로기준법은 5인 미만 사업장에 연차유급휴가, 가산수당, 해고 제한 등을 적용하지 않습니다. 정부는 2027년 상반기까지 연차휴가·공휴일 규정을 확대 적용하는 단계적 로드맵을 국정과제로 두고 있고, 관련 개정안 6건이 국회에 계류 중입니다(2026년 11월 기준). 아직 시행되지 않았으므로, 5인 미만 사업장 근로자는 이 계산기의 연차수당 부분을 참고용으로만 보시기 바랍니다. 다만 퇴직금은 5인 미만 사업장에도 적용됩니다.</p>
+
+        <h3>퇴직금 계산 체크리스트</h3>
+        <ul class="checklist">
+          <li>입사일과 마지막 근무일을 정확히 확인했는가 (재직일수는 양 끝 포함)</li>
+          <li>최근 3개월 급여명세서로 기본급·고정수당·변동수당을 나눠 더했는가</li>
+          <li>최근 1년 정기 상여금 총액을 넣었는가 (성과급·격려금은 제외될 수 있음)</li>
+          <li>퇴직 전에 이미 지급된 연차수당이 있는가</li>
+          <li>육아휴직·출산휴가·산재 요양기간이 3개월 안에 있었는가</li>
+          <li>미사용 연차일수와 통상임금을 인사팀 기준과 맞춰 보았는가</li>
+        </ul>
+      </section>
+
+      <section id="guide-unemployment">
+        <h2>3. 실업급여(구직급여), 얼마를 며칠 받나</h2>
+        <p>구직급여는 <strong>이직 전 평균임금의 60%</strong>를 기준으로 하되, 1일 상한액과 하한액 사이로 조정한 뒤 소정급여일수를 곱해 총액을 정합니다. 2026년은 상한 68,100원, 하한 66,048원(1일 8시간 기준)으로 두 금액 차이가 2,000원 남짓밖에 되지 않습니다. 월급이 꽤 달라도 받는 금액이 비슷해지는 이유입니다.</p>
+
+        <h3>계산 순서</h3>
+        <ol>
+          <li>이직 전 3개월 임금총액을 그 기간의 총일수로 나눠 <strong>기초일액(1일 평균임금)</strong>을 구합니다.</li>
+          <li>기초일액의 <strong>60%</strong>를 계산합니다.</li>
+          <li>60%가 상한액을 넘으면 상한액, 하한액보다 적으면 하한액을 적용합니다. 하한액은 <strong>최저임금 × 80% × 1일 소정근로시간</strong>(2026년 10,320원 × 0.8 × 8시간 = 66,048원)입니다.</li>
+          <li>이직 당시 만 나이와 고용보험 총 피보험기간으로 <strong>소정급여일수</strong>를 정합니다.</li>
+          <li>1일 급여액 × 소정급여일수 = 총 예상 수급액. 실제로는 실업인정을 받은 기간만큼 나눠 들어옵니다.</li>
+        </ol>
+
+        <h3>2026년 상한액이 68,100원이 된 이유</h3>
+        <p>2025년까지 상한액은 66,000원이었습니다. 그런데 2026년 최저임금이 시간급 10,320원으로 오르면서 하한액이 66,048원이 되어 <strong>하한이 상한을 넘는 역전 현상</strong>이 생겼습니다. 정부는 2025년 12월 고용보험법 시행령을 고쳐 급여기초 임금일액 상한을 113,500원으로 올렸고, 그 60%인 68,100원이 2026년 1월 1일 이후 이직자에게 적용됩니다. 2025년 12월 31일 이전에 이직한 사람은 종전 상한 66,000원을 적용받습니다.</p>
+
+        <h3>소정급여일수 표</h3>
+        <div class="table-wrap">
+          <table class="mini-table compare">
+            <thead><tr><th>고용보험 가입기간</th><th class="num">50세 미만</th><th class="num">50세 이상·장애인</th></tr></thead>
+            <tbody>
+              <tr><td>1년 미만</td><td class="num">120일</td><td class="num">120일</td></tr>
+              <tr><td>1년 이상 ~ 3년 미만</td><td class="num">150일</td><td class="num">180일</td></tr>
+              <tr><td>3년 이상 ~ 5년 미만</td><td class="num">180일</td><td class="num">210일</td></tr>
+              <tr><td>5년 이상 ~ 10년 미만</td><td class="num">210일</td><td class="num">240일</td></tr>
+              <tr><td>10년 이상</td><td class="num">240일</td><td class="num">270일</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>가입기간은 이직 전 모든 사업장의 피보험기간을 합산합니다. 나이는 이직일 당시 만 나이이고, 장애인은 나이와 관계없이 오른쪽 열을 적용합니다. 구직급여는 이직일 다음 날부터 <strong>12개월</strong> 안에 받아야 하므로, 신청이 늦으면 남은 일수가 있어도 받지 못할 수 있습니다.</p>
+
+        <h3>수급 요건 — 180일과 비자발적 이직</h3>
+        <p>이직 전 18개월 동안 피보험단위기간이 합산 <strong>180일 이상</strong>이어야 하고, <strong>비자발적 이직</strong>이어야 합니다. 권고사직, 계약기간 만료, 정년, 사업장 이전·폐업, 임금 체불 등이 인정됩니다. 자발적 퇴사라도 임금 체불, 직장 내 괴롭힘, 통근 곤란 등 정당한 사유가 있으면 인정될 수 있지만, 이는 고용센터가 사실관계를 심사해 판단합니다. 단순히 ‘더 좋은 직장’을 구하려고 그만둔 경우는 해당되지 않습니다.</p>
+
+        <h3>2027년 개편 — 주 6일 지급, 상한은 하한의 103%</h3>
+        <p>정부는 2026년 9월 1일 고용보험위원회에서 구직급여를 <strong>무급휴일을 제외한 주 6일 기준</strong>으로 바꾸는 개편안을 확정했습니다. 총 지급액과 지급일수(120~270일)는 그대로 두고 주당 지급일수만 줄이기 때문에, 월 수령액은 22만~23만원 줄고 수급기간은 최대 한 달 반 늘어납니다. 상한액은 정액이 아니라 <strong>하한액의 103%</strong>로 연동되며, 2027년 최저임금 10,700원을 반영하면 150일 수급자의 월 하한은 176만원, 상한은 181만원 수준이 됩니다.</p>
+        <p>다만 이 개편은 법률·하위법령 개정이 남아 있어 <strong>2026년 11월 현재 시행되지 않았습니다</strong>. 계산기는 현행 2026년 기준으로 계산하고, 2027년 이직 예정이라면 고용24의 최신 안내를 함께 확인하세요.</p>
+
+        <h3>신청 절차와 조기재취업수당</h3>
+        <ul class="checklist">
+          <li>이직일 다음 날부터 12개월 안에 고용24 또는 관할 고용센터에서 수급자격 신청</li>
+          <li>수급자격 인정 후 1~4주 단위로 실업인정(재취업 활동 신고)을 받아야 지급</li>
+          <li>재취업 후 12개월 이상 고용이 유지되면 잔여 소정급여일수의 50%를 조기재취업수당으로 지급</li>
+          <li>2027년 개편안에서는 조기재취업수당 제외 기준이 월 소득 300만원으로 강화될 예정</li>
+        </ul>
+      </section>
+
+      <section id="guide-common">
+        <h2>계산 결과를 볼 때 꼭 확인할 점</h2>
+        <p>이 페이지의 계산은 모두 브라우저에서 실행되며 입력값은 어디에도 저장되거나 전송되지 않습니다. 다만 지원금·급여는 개인 상황(출생 순위, 주소지, 회사 규모, 취업 규칙, 이직 사유)에 따라 실제 금액이 달라질 수 있어, 결과는 <strong>참고용 추정</strong>입니다. 실제 신청·정산 전에는 다음 기관에서 최신 기준을 확인하세요.</p>
+        <ul class="source-list">
+          <li>출산·육아 지원금: 보건복지부·복지로(bokjiro.go.kr), 보건복지상담센터 129</li>
+          <li>육아휴직급여·실업급여: 고용24(work24.go.kr), 고용노동부 고객상담센터 1350</li>
+          <li>퇴직금·연차수당: 고용노동부 노동포털(labor.moel.go.kr) 퇴직금 계산기, 관할 근로감독관</li>
+          <li>법령 원문: 국가법령정보센터(law.go.kr) — 근로기준법, 근로자퇴직급여 보장법, 고용보험법, 아동수당법</li>
+        </ul>
+      </section>
+
+    </article>
+  </div>
+
+  <!-- ================= FAQ ================= -->
+  <div class="wrap section" id="faq">
+    <div class="content">
+      <h2>자주 묻는 질문</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>첫만남이용권은 얼마이고 언제까지 쓸 수 있나요?</summary>
+          <div class="faq-body"><p>2024년 1월 1일 이후 출생아부터 첫째 200만원, 둘째 이상 300만원입니다. 국민행복카드에 이용권(포인트)으로 들어오고, 출생일부터 2년 안에 써야 합니다. 유흥·사행 업종, 위생업종(이·미용실 제외), 레저 업종, 면세점 등에서는 쓸 수 없습니다.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>부모급여는 2026년에도 0세 100만원, 1세 50만원인가요?</summary>
+          <div class="faq-body"><p>네. 2026년 부모급여는 0세 월 100만원, 1세 월 50만원으로 2025년과 같습니다. 만 2세 미만 모든 아동이 소득 기준 없이 받고, 어린이집을 이용하면 보육료가 먼저 빠져 0세는 월 41만 6,000원, 1세는 현금 차액이 없습니다.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>아동수당은 몇 살까지, 얼마를 받나요?</summary>
+          <div class="faq-body"><p>2026년에는 만 9세 미만 아동에게 월 10만원을 지급합니다. 2026년 3월 개정으로 2030년까지 매년 1세씩 늘어나 2027년 만 10세 미만, 2030년 만 13세 미만이 됩니다. 비수도권 10만 5,000원, 인구감소 우대지역 11만원, 특별지역 12만원이고, 인구감소지역에서 지역사랑상품권으로 받으면 1만원이 더해집니다.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>육아휴직급여 상한액은 얼마인가요?</summary>
+          <div class="faq-body"><p>2025년 1월 1일 이후 개시한 육아휴직부터 1~3개월 통상임금 100%에 월 상한 250만원, 4~6개월 100%에 200만원, 7개월 이후 80%에 160만원이고 월 하한은 70만원입니다. 2026년에도 같으며 12개월을 모두 쓰면 최대 2,310만원입니다.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>6+6 부모육아휴직제는 부모가 동시에 쉬어야 하나요?</summary>
+          <div class="faq-body"><p>아닙니다. 자녀 생후 18개월 이내에 부모가 모두 육아휴직을 쓰면 동시에 쓰지 않아도, 기간이 겹치지 않아도 적용됩니다. 공통으로 사용한 기간을 기준으로 최대 첫 6개월까지 각자 통상임금 100%에 월 상한 250만·250만·300만·350만·400만·450만원이 적용됩니다.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>퇴직금은 어떻게 계산하나요?</summary>
+          <div class="faq-body"><p>1일 평균임금 × 30일 × 재직일수 ÷ 365입니다. 평균임금은 퇴직 전 3개월 임금총액을 그 기간 총일수로 나눈 금액에 연간 정기 상여금의 3/12과 이미 지급된 연차수당의 3/12을 더해 구합니다. 이 값이 통상임금보다 적으면 통상임금으로 계산합니다.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>연차수당은 하루 얼마로 계산하나요?</summary>
+          <div class="faq-body"><p>1일 통상임금으로 계산합니다. 월 통상임금을 월 소정근로시간(주 40시간이면 209시간)으로 나눈 뒤 8시간을 곱하고, 미사용 일수를 곱합니다. 월 통상임금 300만원이면 1일 11만 4,832원, 5일이면 57만 4,160원입니다.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>실업급여 상한액과 하한액은 얼마인가요?</summary>
+          <div class="faq-body"><p>2026년 1월 1일 이후 이직자는 1일 상한 68,100원, 하한 66,048원(1일 8시간 기준)입니다. 하한은 2026년 최저임금 10,320원의 80%에 8시간을 곱한 금액이고, 상한은 급여기초 임금일액 상한 113,500원의 60%입니다. 2025년 이직자는 종전 상한 66,000원이 적용됩니다.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>실업급여는 며칠 동안 받을 수 있나요?</summary>
+          <div class="faq-body"><p>이직 당시 만 나이와 고용보험 총 피보험기간에 따라 120~270일입니다. 50세 미만은 1년 미만 120일, 1~3년 150일, 3~5년 180일, 5~10년 210일, 10년 이상 240일이고, 50세 이상·장애인은 1~3년 180일, 3~5년 210일, 5~10년 240일, 10년 이상 270일입니다.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>2027년에는 출산·육아 지원이 어떻게 바뀌나요?</summary>
+          <div class="faq-body"><p>정부안은 2027년 7월 1일 이후 출생아부터 첫만남이용권·부모급여·아동수당을 아이맞이지원금과 아동기본수당으로 통합합니다. 아이맞이지원금은 첫째 1,000만원·둘째 1,200만원·셋째 이상 1,500만원을 1년간 분기별 현금으로, 아동기본수당은 0~13세 미만에 월 20만원(현금 10만+상품권 10만)을 지급합니다. 국회 심의 전이라 확정된 내용이 아닙니다.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>계산 결과가 실제 지급액과 다른 이유는 무엇인가요?</summary>
+          <div class="faq-body"><p>계산기는 공개된 법령과 고시의 표준값으로 계산합니다. 실제로는 회사 취업규칙의 상여금·수당 항목, 평균임금 산정 제외기간, 지자체 조례, 고용센터의 수급자격 심사에 따라 달라질 수 있습니다. 중요한 결정 전에는 담당 기관이나 노무사에게 확인하세요.</p></div>
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <!-- 광고: 하단 (ad-slot-bottom) -->
+  <div class="wrap">
+    <aside class="ad-slot" id="ad-slot-bottom" aria-label="광고">
+      <div class="ad-inner">
+        <div>
+          <b>광고 영역 · ad-slot-bottom</b>
+          <span>본문이 끝나는 지점의 하단 광고 지면입니다.</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:8px">
+          <span class="brand-mark" aria-hidden="true">活</span>
+          <span>생활 계산소</span>
+        </div>
+        <p class="footer-note">출산·육아 지원금과 직장 생활에 필요한 계산을 한곳에 모았습니다. 모든 계산은 브라우저에서 실행되고 입력값은 저장되지 않습니다.</p>
+      </div>
+      <div>
+        <div class="footer-head">계산기</div>
+        <div class="footer-links">
+          <a href="#calculators" data-tab="childbirth">출산·육아 지원금</a>
+          <a href="#calculators" data-tab="severance">퇴직금·연차수당</a>
+          <a href="#calculators" data-tab="unemployment">실업급여</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-head">안내</div>
+        <div class="footer-links">
+          <a href="about.html">서비스 소개·계산 기준</a>
+          <a href="privacy.html">개인정보처리방침</a>
+          <a href="#guide">해설</a>
+          <a href="#faq">자주 묻는 질문</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2026 생활 계산소. 계산 결과는 참고용이며 법적 효력이 없습니다.</span>
+      <span>기준일 2026. 11. 15.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

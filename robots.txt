@@ -1,0 +1,15 @@
+# 생활 계산소 — robots.txt
+User-agent: *
+Allow: /
+
+# Google AdSense 크롤러 (광고 심사·게재)
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+Sitemap: https://sdn6517-cmd.github.io/life-hr-calc/sitemap.xml
