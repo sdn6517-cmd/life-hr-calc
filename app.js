@@ -741,7 +741,10 @@
           lines.push('— 생활 계산소');
           var text = lines.join('\n');
           if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(text);
+            try {
+              var p = navigator.clipboard.writeText(text);
+              if (p && p.catch) p.catch(function () {});
+            } catch (e) { /* 클립보드 권한이 없으면 조용히 넘어간다 */ }
           } else if (document.createElement) {
             var ta = document.createElement('textarea');
             ta.value = text;
