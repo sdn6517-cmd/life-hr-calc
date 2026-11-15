@@ -979,7 +979,7 @@ table.compare td.strong { font-weight: 700; color: var(--ink); }
   grid-template-columns: 1fr;
 }
 @media (min-width: 720px) {
-  .footer-grid { grid-template-columns: 1.6fr 1fr 1fr; gap: 32px; }
+  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.1fr; gap: 28px; }
 }
 .footer-grid h3 {
   font-size: .8125rem;
@@ -1150,3 +1150,74 @@ table.compare td.strong { font-weight: 700; color: var(--ink); }
 
 /* 결과 영역 제목 */
 .card > h3.result-title { margin-bottom: 8px; }
+
+/* ---------- 14. 출산·육아 준비물 추천 (쿠팡 파트너스) ---------- */
+.picks-head h2 {
+  font-size: 1.25rem;
+  letter-spacing: -.01em;
+  margin-bottom: 6px;
+}
+.picks-head p {
+  font-size: .875rem;
+  color: var(--ink-3);
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+.picks-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 720px) {
+  .picks-grid { grid-template-columns: repeat(4, 1fr); gap: 12px; }
+}
+.pick {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+}
+.pick:hover {
+  border-color: var(--brand);
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
+}
+.pick-tag {
+  align-self: flex-start;
+  font-size: .6875rem;
+  font-weight: 700;
+  color: var(--brand);
+  background: var(--brand-soft);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+.pick-name {
+  font-size: .9375rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.4;
+}
+.pick-why {
+  flex: 1;
+  font-size: .8125rem;
+  color: var(--ink-2);
+  line-height: 1.6;
+}
+.pick-go {
+  font-size: .8125rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.pick:hover .pick-go { text-decoration: underline; }
+.picks-disclosure {
+  margin-top: 14px;
+  font-size: .75rem;
+  color: var(--ink-3);
+  line-height: 1.6;
+}
