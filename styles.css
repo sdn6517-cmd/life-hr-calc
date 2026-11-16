@@ -1224,6 +1224,10 @@ table.compare td.strong { font-weight: 700; color: var(--ink); }
 
 /* ---------- 14-b. 네이버 쇼핑 커넥트 묶음 ---------- */
 .picks-group { margin-top: 26px; }
+.picks-grid-3 { grid-template-columns: 1fr; }
+@media (min-width: 720px) {
+  .picks-grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
 .picks-sub {
   font-size: 1.0625rem;
   letter-spacing: -.01em;
