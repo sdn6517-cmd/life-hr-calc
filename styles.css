@@ -1221,3 +1221,29 @@ table.compare td.strong { font-weight: 700; color: var(--ink); }
   color: var(--ink-3);
   line-height: 1.6;
 }
+
+/* ---------- 14-b. 네이버 쇼핑 커넥트 묶음 ---------- */
+.picks-group { margin-top: 26px; }
+.picks-sub {
+  font-size: 1.0625rem;
+  letter-spacing: -.01em;
+  margin-bottom: 6px;
+}
+.picks-sub-note {
+  font-size: .875rem;
+  color: var(--ink-3);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.pick-price {
+  font-size: .875rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.pick-price .pick-was {
+  font-size: .75rem;
+  font-weight: 500;
+  color: var(--ink-3);
+  text-decoration: line-through;
+  margin-left: 4px;
+}
